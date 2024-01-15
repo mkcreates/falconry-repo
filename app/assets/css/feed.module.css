@@ -1,0 +1,54 @@
+.feed-con {
+    @apply max-w-[51rem] 2xl:max-w-4xl mx-auto xs:px-3 pb-10
+}
+.feed-con .cover {
+    @apply relative w-full pt-[0%] xs:rounded-3xl overflow-hidden
+}
+.feed-con .cover img {
+    @apply object-cover object-center
+}
+.feed-con .content-con {
+    @apply relative px-3 xs:px-4 sm:px-7 -mt-20 sm:-mt-28 xl:-mt-32
+}
+.feed-con .content-con .content {
+    @apply sm:flex relative w-full bg-lightBg2 dark:bg-darkBg1 shadow dark:shadow-none rounded-3xl p-4 xs:p-5 sm:p-9
+}
+.content-con .content .buttons{
+    @apply absolute top-5 right-5 sm:static sm:mr-5 sm:pt-20
+}
+.content-con .content .buttons .bk.active{
+    @apply bg-black/20 dark:bg-white/70
+}
+.content-con .content .buttons .bk.active svg{
+    @apply text-black/70 dark:text-darkBg3
+}
+.content-con .content .holder{
+    @apply mt-3 xs:mt-0
+}
+.content .holder .provider{
+    @apply text-sm text-black/80 dark:text-white/70 mb-3
+}
+.content .holder .provider img{
+    @apply rounded-full inline mr-1
+}
+.content .holder .title{
+    @apply text-2xl xs:text-3xl sm:text-4xl font-bold text-black/80 dark:text-white/70
+}
+.content .holder .date-time{
+    @apply flex text-xs text-black/60 dark:text-white/60 my-2 mb-3
+}
+.content .holder .date-time span{
+    @apply flex items-center
+}
+.content .holder .date-time span svg{
+    @apply mr-1 -mt-0.5
+}
+.content .holder .contents{
+    @apply max-w-full text-sm text-black/90 dark:text-white/90 leading-6 mb-2 overflow-x-auto
+}
+.content .holder .contents p{
+    @apply mb-3
+}
+.content .holder .contents a{
+    @apply text-sky-600 dark:text-sky-500 mb-2
+}

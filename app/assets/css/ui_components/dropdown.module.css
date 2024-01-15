@@ -1,0 +1,22 @@
+.dropdown {
+    @apply relative inline
+}
+.dropdown .default {
+    @apply inline-flex items-center
+}
+.dropdown .default span {
+    @apply mr-1.5 text-sm
+}
+.dropdown .content {
+    @apply absolute top-full min-w-[100px] max-h-0 overflow-hidden rounded-lg shadow z-10
+}
+.dropdown .content .inner {
+    @apply bg-lightBg2 dark:bg-darkBg2 border dark:border-none rounded-lg p-2 text-xs
+}
+.dropdown .item {
+    @apply border border-transparent hover:border-black/10 dark:hover:border-white/10 px-2.5 py-1.5 text-black/90 dark:text-white/75 mb-1 rounded-md text-center cursor-pointer
+}
+
+.dropdown .item.active {
+    @apply bg-lightBg1 dark:bg-darkBg1
+}

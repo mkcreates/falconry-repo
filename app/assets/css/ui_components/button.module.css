@@ -1,0 +1,28 @@
+.button {
+    @apply flex items-center justify-center text-xs px-3 py-2.5 rounded disabled:opacity-60
+}
+.button.small {
+    @apply px-2 py-1.5
+}
+.button.button1 {
+    @apply text-black/80 dark:text-white/70 border border-black/10 dark:border-white/10
+}
+.button.button2 {
+    @apply text-black/80 dark:text-white/70 bg-lightBg3 dark:bg-darkBg3
+}
+.button.button3 {
+    @apply text-black/90 dark:text-white/90 bg-lightBg3 dark:bg-darkBg2
+}
+.button.button4 {
+    @apply text-black/90 dark:text-white/90 bg-lightBg3 dark:bg-darkBg1
+}
+
+.button.danger {
+    @apply text-red-600 dark:text-red-500 border border-red-500 bg-lightBg3 dark:bg-darkBg3
+}
+.button.bordered {
+    @apply border border-white/10
+}
+.button .loader {
+    @apply inline animate-spin ml-2
+}

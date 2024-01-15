@@ -1,0 +1,63 @@
+#settings {
+    @apply grow flex flex-col md:flex-row border-t border-black/10 dark:border-white/[.07] overflow-y-hidden
+  }
+#settings .text {
+  @apply text-sm text-black/60 dark:text-white/40
+}
+#settings .text.lighter {
+  @apply text-black/80 dark:text-white/70
+}
+  
+
+#settingsNav {
+  @apply w-full flex xs:block max-w-[100vw] md:w-44 lg:w-60 md:h-full dark:border-b md:border-b-transparent dark:border-r border-black/10 dark:border-white/[.07] overflow-y-auto overflow-x-auto px-6 shrink-0 md:py-4
+}
+#settingsNav a{
+  @apply inline-flex md:flex items-center relative text-black/70 dark:text-white/70 text-sm md:mb-2 py-2.5 mr-4 md:mr-0 leading-[none] border-b-2 md:border-b border-transparent hover:border-black/5 dark:hover:border-white/5
+}
+#settingsNav a.active{
+  @apply font-bold border-black/20 dark:border-white/30 md:border-black/10 md:dark:border-white/10
+}
+#settingsNav a svg{
+  @apply mr-1 md:mr-4
+}
+#settings .heading{
+  @apply flex items-center text-sm text-black/70 dark:text-white/70 font-semibold
+}
+
+#settings .feedlist{
+  @apply border dark:border-white/[.07] rounded-xl mt-8
+}
+.feedlist .head{
+  @apply flex items-center text font-semibold px-4 py-3
+}
+.feedlist .items-con .items{
+  @apply xs:flex items-center justify-between border-t dark:border-white/[.07] p-3
+}
+.feedlist .items-con .items .infos{
+  @apply grow flex items-center
+}
+.feedlist .items-con .items .infos .img{
+  @apply relative w-7 h-7 overflow-hidden rounded-full border dark:border-white/5 shrink-0 mr-2 bg-lightBg1 dark:bg-darkBg2 
+}
+.feedlist .items-con .items .infos .name{
+  @apply grow text-sm text-black/70 dark:text-white/70 font-semibold overflow-hidden
+}
+.feedlist .items-con .items .infos .inputcon{
+  @apply grow w-full xs:w-56 bg-transparent mr-2
+}
+.feedlist .items-con .items .infos .inputcon .edit{
+  @apply w-full text-sm bg-transparent text-black/70 dark:text-white/70 font-semibold
+}
+.feedlist .items-con .items .err {
+  @apply text-[0.813rem] text-red-600 dark:text-red-400 mt-0.5
+}
+.feedlist .items-con .items .succ {
+  @apply text-[0.813rem] text-green-600 dark:text-green-400
+}
+.feedlist .items-con .items .actions{
+  @apply flex justify-end items-center mt-2 xs:mt-0
+}
+.feedlist .items-con .items .actions button{
+  @apply ml-1.5 xs:ml-2
+}

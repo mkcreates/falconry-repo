@@ -1,0 +1,24 @@
+@keyframes bounceOpacity {
+    0% {
+      opacity: 0.5%;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5%;
+    }
+  }
+  
+  .skeleton {
+    @apply bg-lightBg3/60 dark:bg-darkBg2 rounded-md
+  }
+  .skeleton {
+    animation: bounceOpacity 3s ease-in-out infinite;
+  }

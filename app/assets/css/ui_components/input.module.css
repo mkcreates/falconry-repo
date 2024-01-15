@@ -1,0 +1,12 @@
+.input label{
+    @apply text-xs text-black/70 dark:text-white/70 -mb-10
+  }
+  .input .con {
+    @apply flex items-center w-full text-black/80 dark:text-white/80 border-b border-black/10 dark:border-white/10 focus-within:border-black/30 focus-within:dark:border-white/30
+  }
+  .input .input-con{
+    @apply grow
+  }
+.input input{
+  @apply w-full min-w-0 bg-transparent text-sm py-2 autofill:bg-transparent autofill:text-black/80 autofill:dark:text-white/80
+}

@@ -1,0 +1,39 @@
+.afeedCon {
+    @apply w-full max-w-5xl 2xl:max-w-6xl mx-auto bg-white dark:bg-transparent dark:mx-0 p-4 xs:p-7 shadow dark:shadow-none rounded-2xl sm:rounded-3xl dark:rounded-none
+}
+.afeedCon .head {
+    @apply text-sm text-black/80 dark:text-white/80 mb-5
+}
+.afeedCon .cat {
+    @apply text-base font-semibold text-black/80 dark:text-white/80 mb-2
+}
+.afeedCon .itemsCon {
+    @apply grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4
+}
+.afeedCon .items {
+    @apply flex items-center relative border dark:border-white/5 p-3 rounded-xl cursor-pointer overflow-hidden hover:border-stone-400/70 hover:dark:border-white/20
+}
+.afeedCon .items .load {
+    @apply absolute top-1 right-1 animate-spin text-black/80 dark:text-white/90
+}
+.afeedCon .items .error {
+    @apply absolute top-1 right-1  text-red-600 dark:text-red-400
+}
+.afeedCon .items .img {
+    @apply w-10 h-10 relative shrink-0 bg-lightBg3 dark:bg-darkBg3 border dark:border-white/5 rounded-full overflow-hidden mr-2
+}
+.afeedCon .items .img img {
+    @apply object-cover object-center
+}
+.afeedCon .items .img .no-img {
+    @apply flex items-center justify-center w-full h-full text-base font-semibold text-black/60 dark:text-white/60
+}
+.afeedCon .items .name {
+    @apply text-sm text-black/80 dark:text-white/80 whitespace-nowrap
+}
+.afeedCon .items .link {
+    @apply text-xs text-black/60 dark:text-white/60 whitespace-nowrap
+}
+.feederror {
+    @apply absolute bottom-3 mx-3 w-fit flex items-center text-white text-sm bg-red-500 dark:bg-red-600 rounded-md border border-white/30 px-3 py-1 shadow-lg
+}

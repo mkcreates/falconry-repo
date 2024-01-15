@@ -1,0 +1,54 @@
+/* navbar component styles */
+
+nav {
+    @apply relative overflow-hidden selection:bg-lightBg3 dark:selection:bg-darkBg1
+}
+nav .links {
+    @apply py-3 border-b border-black/[.07] dark:border-white/[.07] last:border-none
+}
+nav .links a:not(.forsep){
+    @apply flex items-center text-black/90 dark:text-whitish text-xs w-[115%] mb-0.5 px-3 py-2.5 rounded-l-md leading-[none] sm:hover:after:scale-x-100 overflow-hidden whitespace-nowrap
+}
+nav .links a:not(.forsep).active{
+    @apply bg-lightBg1 dark:bg-darkBg1 hover:after:hidden
+}
+nav .links a:not(.forsep):after{
+    @apply grow h-px content-['\a0'] relative bg-black/[.15] dark:bg-white/[.15] ml-3 scale-x-0 origin-right duration-500
+}
+nav .links a:not(.forsep) svg {
+    @apply inline mr-3 shrink-0
+}
+nav .links .imgcon {
+    @apply relative w-5 h-5 bg-lightBg1 dark:bg-darkBg1 mr-3 rounded-full shrink-0 overflow-hidden
+}
+nav .links .no-img {
+    @apply w-full h-full flex items-center justify-center text-xs text-black/80 dark:text-white/80 font-semibold rounded-full
+}
+nav .pad-x { @apply px-4 }
+
+nav .seperator{
+    @apply flex items-center justify-between text-xs text-black/50 dark:text-white/50 px-3 mb-1
+}
+nav .seperator span { @apply flex items-center hover:text-black/80 dark:hover:text-white/80 cursor-pointer }
+nav .seperator span a { @apply ml-1 }
+nav .seperator span svg { @apply ml-0.5 }
+
+.navList {
+    @apply grid grid-cols-1 xs:grid-cols-2
+}
+.navList a {
+    @apply flex-1 flex w-full text-sm text-black/70 dark:text-white/70 hover:bg-lightBg1 dark:hover:bg-darkBg1 px-3 py-2 mb-2 rounded-lg
+}
+.navList a .imgconl {
+    @apply relative  w-[23px] h-[23px] bg-lightBg1 dark:bg-darkBg1 mr-2 rounded-full shrink-0 overflow-hidden
+}
+.navList a .no-img {
+    @apply w-full h-full flex items-center justify-center text-xs text-black/80 dark:text-white/80 font-semibold
+}
+
+.navList a svg {
+    @apply mr-1
+}
+.navList a .fname {
+    @apply grow overflow-hidden whitespace-nowrap text-ellipsis
+}

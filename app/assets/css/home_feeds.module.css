@@ -1,0 +1,78 @@
+main {
+  @apply selection:bg-lightBg3 dark:selection:bg-darkBg3
+}
+
+.feedcon {
+  @apply mb-3 dark:mb-6 xs:mb-6
+}
+.feed-items {
+  @apply h-full bg-white dark:bg-transparent rounded-lg dark:rounded-none shadow dark:shadow-none overflow-hidden
+}
+.feed-items .cover {
+  @apply relative w-full pt-[0%] shadow-sm dark:rounded-lg overflow-hidden
+}
+.feed-items .cover .img {
+  @apply w-full object-cover object-center
+}
+.feed-items .cover .no-img {
+  @apply absolute top-0 w-full h-full flex items-center justify-center
+}
+.feed-items .cover .no-img .def {
+  @apply absolute top-0 object-cover object-center opacity-30
+}
+.feed-items .cover .no-img .icon {
+  @apply relative rounded-full shadow-lg
+}
+.feed-items .cover .no-img .no-icon {
+  @apply flex items-center justify-center border-2 border-black text-black text-lg font-bold w-12 h-12 rounded-full opacity-50 dark:opacity-100
+}
+.feed-items .info {
+  @apply text-xs p-3 dark:p-0
+}
+.feed-items .info .top {
+  @apply flex items-center justify-between text-black/70 dark:text-white/70 dark:mt-3
+}
+.feed-items .info .feeder {
+  @apply flex items-center text-black/60 dark:text-white/50 mt-2
+}
+.feed-items .info .top span {
+  @apply inline-flex items-center
+}
+.feed-items .info img, .feed-items .info svg {
+  @apply inline
+}
+.feed-items .info img {
+  @apply rounded-full mr-1
+}
+.feed-items .info .title {
+  @apply text-[0.813rem] font-semibold text-black/75 dark:text-white/70 mt-2
+}
+.feed-items .info .top .dots {
+  @apply -mt-1
+}
+.feed-items .info .top .dots span {
+  @apply w-[3px] h-[3px] bg-black/70 dark:bg-white/70 rounded-full mr-1
+}
+.feed-items .info .top .content svg {
+  @apply first:mr-4 text-black/40 dark:text-white/40
+}
+.feed-items .info .top .content svg.active {
+  @apply text-black/90 dark:text-white/90
+}
+.feed-items .info .top .content .loads {
+  @apply text-black/50 dark:text-white/50 animate-spin
+}
+
+.loadMore {
+  @apply absolute left-0 bottom-0 w-full flex items-center justify-center text-sm text-black/80 dark:text-white/80 p-3 bg-lightBg1 dark:bg-darkBg1
+}
+.loadMore svg {
+  @apply mr-2 animate-spin
+}
+
+.authLoader {
+  @apply absolute top-3 left-3 z-40 flex items-center bg-lightBg3 dark:bg-darkBg3 text-black/80 dark:text-white/90 text-sm border border-stone-300 dark:border-white/5 rounded-xl p-3 shadow-lg
+}
+.authLoader svg {
+  @apply animate-spin mr-2
+}

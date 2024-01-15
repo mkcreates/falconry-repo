@@ -1,0 +1,72 @@
+/* Falconry Styles : MK @2024 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* import styles for UI components here*/
+@import url(ui_components/button.module.css);
+@import url(ui_components/badge.module.css);
+@import url(ui_components/dropdown.module.css);
+@import url(ui_components/input.module.css);
+@import url(ui_components/modal.module.css);
+@import url(ui_components/skeleton.module.css);
+
+/* import styles for other components here*/
+@import url(navbar.module.css);
+@import url(header.module.css);
+@import url(home_feeds.module.css);
+@import url(settings.module.css);
+@import url(feed.module.css);
+@import url(signup.module.css);
+@import url(addfeeds.module.css);
+@import url(landing.module.css);
+
+
+@font-face {
+    font-family: OpenSans;
+    src: url(OpenSans.ttf);
+}
+
+body, html {
+  font-family: OpenSans;
+  @apply w-full h-full
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{@apply w-[1.5px] xs:w-[3px] sm:w-[6px] bg-transparent}
+*::-webkit-scrollbar-thumb{@apply rounded-[10px] bg-black/20 dark:bg-white/25}
+*::-webkit-scrollbar-thumb:hover{@apply bg-black/30 dark:bg-white/10}
+
+*:focus {
+  outline:none !important;
+  box-shadow: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  @apply shadow-lightBg1 dark:shadow-darkBg1 [-webkit-text-fill-color:rgba(0,0,0,0.8)] dark:[-webkit-text-fill-color:rgba(255,255,255,0.8)];
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.center {
+  @apply flex items-center justify-center
+}
+
+.main-padding {
+  @apply w-full max-w-6xl mx-auto px-4 sm:px-5
+}
+
+
+/* customize tooltip here */
+div[data-tippy-root] .tippy-box {
+  @apply bg-[#dddddd!important] dark:bg-[#0e1218!important] text-xs text-black dark:text-white/90 shadow
+}
+div[data-tippy-root] .tippy-arrow {
+  @apply text-[#dddddd!important] dark:text-[#0e1218!important]
+}

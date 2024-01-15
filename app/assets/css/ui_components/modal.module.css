@@ -1,0 +1,18 @@
+.modal {
+    @apply fixed top-0 left-0 flex items-end sm:items-center justify-center w-full h-full z-20
+}
+.backdrop {
+    @apply flex items-center justify-center bg-black/30 dark:bg-black/50 w-20 h-20 opacity-50 rounded-full origin-center
+}
+.modal .dialog{
+    @apply max-w-full xs:max-w-xl min-w-[96%] xs:min-w-fit shrink-0 max-h-[96%] flex flex-col bg-white dark:bg-darkBg2 rounded-xl shadow-md scale-50 opacity-0 absolute m-3
+}
+.modal .heading{
+    @apply flex items-center justify-between px-4 py-2 border-b border-black/10 dark:border-white/[.07]
+}
+.modal .heading span{
+    @apply text-sm font-semibold text-black/70 dark:text-white/60
+}
+.modal .body{
+    @apply grow p-3 xs:p-4 overflow-y-auto
+}

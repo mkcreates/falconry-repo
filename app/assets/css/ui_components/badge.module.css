@@ -1,0 +1,13 @@
+.badge {
+    @apply inline-flex items-center justify-center p-1.5 rounded-full text-xs text-black/50 dark:text-white/50 cursor-pointer disabled:opacity-60
+}
+.badge.badge1 {
+    @apply  hover:bg-lightBg1 dark:hover:bg-darkBg1  
+}
+.badge.badge2 {
+    @apply hover:bg-lightBg3 dark:hover:bg-darkBg3
+}
+
+.badge.bordered {
+    @apply hover:bg-lightBg3 dark:hover:bg-darkBg3 border border-black/20 dark:border-white/20
+}

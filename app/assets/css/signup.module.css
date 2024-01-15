@@ -1,0 +1,43 @@
+.signup {
+    @apply relative w-full sm:max-w-[38rem] mx-auto px-3 xs:px-5
+}
+.signup .description {
+    @apply relative w-full sm:-right-28 bg-gradient-to-tl to-stone-100 from-stone-200 sm:from-stone-300 dark:to-darkBg2 dark:from-darkBg3 sm:max-w-[30rem] rounded-t-xl sm:rounded-xl sm:h-full text-[0.843rem] mic:text-sm text-black/90 dark:text-white/90 border border-stone-200 dark:border-white/[.03] p-4 mic:p-5 shadow
+}
+.signup .bottom {
+    @apply sm:absolute top-0 sm:flex w-full sm:w-auto sm:mt-20 sm:px-0
+}
+.signup .form-con {
+    @apply shrink-0 bg-lightBg2 dark:bg-darkBg2 w-full h-fit sm:w-80 border dark:border-white/5 p-4 xs:p-5 rounded-b-xl sm:rounded-xl shadow-lg xs:shadow-2xl
+}
+.signup .form-con .title {
+    @apply flex items-center justify-between
+}
+.signup .form-con h1 {
+    @apply text-base font-semibold text-black/70 dark:text-white/70 mb-2
+}
+.signup .form-con p {
+    @apply text-[0.813rem] text-black/50 dark:text-white/50 mb-4
+}
+.signup .features {
+    @apply p-3 mic:p-4 xs:p-5 sm:pt-2 mt-3 sm:mt-0 mb-5 sm:mb-0
+}
+.signup .features h1 {
+    @apply text-base text-black/60 dark:text-white/60 font-semibold mb-3 sm:mb-2
+}
+.signup .features p {
+    @apply flex items-baseline text-[0.813rem] text-black/90 dark:text-white/90 mb-4 sm:mb-2
+}
+
+.errorHead, .successHead{
+    @apply rounded-sm px-3 py-2 mb-2
+}
+.errorHead {
+    @apply bg-red-50 dark:bg-red-600/[.07] text-[0.813rem] text-red-600 dark:text-red-400
+}
+.successHead {
+    @apply bg-green-50 dark:bg-green-600/[.07] text-[0.813rem] text-green-600 dark:text-green-400
+}
+.errors {
+    @apply text-[0.813rem] text-red-600 dark:text-red-400
+}

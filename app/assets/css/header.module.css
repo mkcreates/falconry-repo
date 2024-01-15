@@ -1,0 +1,60 @@
+/* header component styles */
+.header-container.feedIsScrolled {
+    @apply shadow-md dark:shadow-lg shadow-black/10 dark:shadow-black/10 z-10
+}
+.header-container.feedIsScrolled .header {
+    @apply py-3
+}
+.header {
+    @apply flex items-center justify-between text-sm2 py-6 duration-300
+}
+.header svg, .header input {
+    @apply text-black/70 dark:text-white/70
+}
+.header input {
+    @apply ml-3 bg-transparent border-none placeholder:dark:text-white/25
+}
+.header .searchForm {
+    @apply absolute top-0 left-0 w-full h-px px-3 duration-300 origin-top
+}
+.header .searchForm .con {
+    @apply w-full max-w-2xl mx-auto flex items-center bg-lightBg1 dark:bg-darkBg1 border dark:border-white/5 rounded-b-3xl px-4 py-3 shadow-lg
+}
+.header .searchForm {
+    @apply absolute top-0 left-0 w-full h-px px-3
+}
+
+.userMenu {
+    @apply absolute top-full right-0 min-w-[230px] text-[0.813rem] bg-white dark:bg-darkBg2 rounded-lg z-10 overflow-hidden shadow-md max-h-0 group-hover:max-h-[345px] duration-300
+}
+.userMenu .name {
+    @apply text-black/80 dark:text-white/90 p-4 text-justify border-b dark:border-darkBg3/30
+}
+.userMenu .links {
+    @apply p-2 text-black/80 dark:text-white/90
+}
+.userMenu .links a {
+    @apply flex items-center rounded-lg hover:bg-lightBg1/90 dark:hover:bg-darkBg3/40 p-2 mb-1
+}
+.userMenu .links a svg {
+    @apply mr-1.5 inline
+}
+.userMenu .outCon{
+    @apply border-t dark:border-darkBg3/30 p-4
+}
+.userMenu .outCon .out {
+    @apply bg-lightBg3 dark:bg-darkBg1 w-full font-semibold
+}
+
+.notifyDropdown {
+    @apply relative
+}
+.notifyDropdown .drop {
+    @apply absolute top-full right-0 min-w-[180px] text-[0.813rem] bg-white dark:bg-darkBg2 rounded-lg z-10 overflow-hidden shadow-md max-h-0 group-focus:max-h-[80px] duration-300
+}
+.notifyDropdown .drop p {
+    @apply flex flex-col justify-center text-sm p-3
+}
+.notifyDropdown .drop p span {
+    @apply text-black/80 dark:text-white/90
+}

@@ -1,0 +1,48 @@
+.cons {
+    @apply fixed w-full h-full top-0 left-0 z-20
+}
+.cons.bg {
+    @apply bg-[url(../img/signupBg.svg)] bg-cover bg-center opacity-30 dark:opacity-[.35]
+}
+
+.centercon {
+    @apply w-full max-w-4xl mx-auto px-4 xs:px-5 selection:bg-lightBg3/90 dark:selection:bg-darkBg3
+}
+.centercon .headland {
+    @apply flex items-center justify-between py-5
+}
+.centercon .headland img {
+    @apply w-32 mic:w-40
+}
+.centercon .headland .th {
+    @apply bg-lightBg3 dark:bg-darkBg3
+}
+.centercon .falconbio {
+    @apply w-full max-w-2xl mx-auto text-center text-black/90 dark:text-white/90 mt-8
+}
+.centercon .falconbio button {
+    @apply text-sm font-semibold w-fit mx-auto mt-4 shadow-md
+}
+
+.centercon .slider {
+    @apply w-[91%] max-w-2xl mx-auto mt-7
+}
+.centercon .slider .imgcon {
+    @apply w-full text-center
+}
+.centercon .slider .feature {
+    @apply w-[90%] mx-auto text-sm sm:text-base text-black/90 dark:text-white/90 font-semibold mb-2
+}
+.centercon .slider .key {
+    @apply text-[0.813rem] text-center text-black/60 dark:text-white/60 font-semibold mb-1
+}
+.centercon .slider .imghold {
+    @apply relative w-full overflow-hidden rounded-2xl sm:rounded-3xl shadow-lg
+}
+.centercon .slider .imghold img {
+    @apply w-full object-cover object-center
+}
+
+.slick-dots li button:before {
+    font-size: 12px!important
+}
